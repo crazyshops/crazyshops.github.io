@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html id="XenForo" lang="en-US" dir="LTR" class="Public NoJs uix_javascriptNeedsInit LoggedOut Sidebar  Responsive pageIsLtr   hasTabLinks  hasSearch   is-sidebarOpen hasRightSidebar is-setWidth navStyle_0 pageStyle_1 hasFlexbox" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<base href="https://www.spigotmc.org/" />
+<script>
+			var _b = document.getElementsByTagName('base')[0], _bH = "https://www.spigotmc.org/";
+			if (_b && _b.href != _bH) _b.href = _bH;
+		</script>
+<title>AntiDragonEggStack | SpigotMC - High Performance Minecraft</title>
+<noscript><style>.JsOnly, .jsOnly { display: none !important; }</style></noscript>
+<link rel="stylesheet" href="css.php?css=xenforo,form,public&amp;style=16&amp;dir=LTR&amp;d=1694425850" />
+<link rel="stylesheet" href="css.php?css=bb_code,likes_summary,login_bar,message_simple,moderator_bar,nat_public_css,rating,resource_review,resource_update,resource_view,resource_view_header,resource_view_tabs&amp;style=16&amp;dir=LTR&amp;d=1694425850" />
+<link rel="stylesheet" href="css.php?css=uix,spigot&amp;style=16&amp;dir=LTR&amp;d=1694425850" />
+<style>
+	/*** UIX -- PER USER STYLES ***/
+
+	
+
+	
+
+
+	
+
+</style>
+<link rel="stylesheet" href="css.php?css=EXTRA&amp;style=16&amp;dir=LTR&amp;d=1694425850" />
+<style>
+/* Node Styling */
+
+</style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKF3FWXLS9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FKF3FWXLS9');
+  gtag('set', 'user_properties', {
+    guest: 'true'
+  });
+</script>
+<link href="//static.spigotmc.org/styles/spigot/uix/css/font-awesome.min.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700|Ubuntu:400,700" rel="stylesheet" type="text/css">
+<script src="//static.spigotmc.org/js/jquery/jquery-1.11.0.min.js"></script>
+<script src="//static.spigotmc.org/js/xenforo/xenforo.js?_v=3c6a0210"></script>
+<!--[if lt IE 9]>
+	
+		 
+        	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	        
+	        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	        
+	        <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	
+
+<![endif]-->
+<script>
+	uix = {
+		elm: {},
+		fn:{},
+		init: function(){
+			if (uix.betaMode) {
+				console.group('uix.%cinit()', 'color:#3498DB');
+			}
+			for(var x=0;x<uix.events.init.length;x++){
+				uix.events.init[x]()
+		  	}
+		  	console.groupEnd('uix.%cinit()','color:#3498DB')
+		},
+	  	events: {init:[]},
+	  	on: function(event, fn){
+	  		if(event=='init'){
+	  			uix.events.init.push(fn)
+	  		}
+	  	},
+
+		betaMode				: parseInt('0'),
+		jsPathUsed				: 'uix_style',
+		jsGlobal				: parseInt('0'),
+
+
+	  	version					: '1.5.22.0',
+	  	jsHeadVersion				: '1.5.16.0a',
+	  	addonVersion				: '1010270',
+	  	jsCacheBust				: '1',
+	  	contentTemplate				: 'resource_description',
+
+		javascriptInitHide			: parseInt('1'),
+		globalPadding 				: parseInt('16px'),
+		sidebarWidth				: parseInt('250px'),
+		mainContainerMargin  	        	: '266px',
+		maxResponsiveWideWidth   		: parseInt('800px'),
+		maxResponsiveMediumWidth 		: parseInt('610px'),
+		maxResponsiveNarrowWidth 		: parseInt('480px'),
+		sidebarMaxResponsiveWidth		: parseInt('800px'),
+		
+			responsiveMessageBreakpoint		: parseInt('610px'),
+		
+		sidebarMaxResponsiveWidthStr		: '800px',
+
+		
+			offCanvasRightTriggerWidth	: parseInt('800px'),
+		
+
+		
+			offCanvasLeftTriggerWidth	: parseInt('800px'),
+		
+
+		
+			
+				offCanvasNavTriggerWidth	: parseInt('800px'),
+			
+		
+		
+			
+				offCanvasVisitorTriggerWidth	: parseInt('800px'),
+			
+		
+
+		offcanvasTriggerAnimationDuration	: parseInt('300ms'),
+
+
+
+
+		dropdownMenuAnimationSpeed		: parseInt('0ms'),
+		inlineAlertBalloons			: (parseInt('1') && !parseInt('1')) || parseInt('1'),
+
+		jumpToFixedDelayHide			: parseInt('1'),
+
+		stickyNavigationMinWidth 		: parseInt('0'),
+		stickyNavigationMinHeight		: parseInt('600'),
+		stickyNavigationMaxWidth 		: parseInt('0'),
+		stickyNavigationMaxHeight		: parseInt('0'),
+		stickyNavigationPortraitMinWidth 	: parseInt('320'),
+		stickyNavigationPortraitMinHeight	: parseInt('500'),
+		stickyNavigationPortraitMaxWidth 	: parseInt('0'),
+		stickyNavigationPortraitMaxHeight	: parseInt('0'),
+		stickySidebar 				: 0,
+		
+			sidebarInnerFloat		: "right",
+		
+		RTL					: 0,
+		stickyItems 				: {},
+		stickyGlobalMinimumPosition		: parseInt('200px'),
+		stickyGlobalScrollUp			: parseInt('0'),
+		stickyDisableIOSThirdParty		: parseInt('1'),
+		preventAlwaysSticky			: parseInt('0'),
+
+		searchMinimalSize			: parseInt('610px'),
+
+		searchPosition				: parseInt('0'),
+
+		nodeStyle				: parseInt('0'),
+		pageStyle				: parseInt('1'),
+
+		enableBorderCheck			: parseInt('0'),
+		enableULManager				: parseInt('0'),
+
+		threadSlidingAvatar			: parseInt('0'),
+		threadSlidingExtra			: parseInt('0'),
+		threadSlidingHover			: parseInt('0'),
+		threadSlidingStaffShow			: parseInt('0'),
+		threadSlidingGlobalEnable		: parseInt('1'),
+
+		signatureHidingEnabled			: parseInt('0'),
+		signatureHidingEnabledAddon		: parseInt('1'),
+		signatureMaxHeight			: parseInt('150px'),
+		signatureHoverEnabled			: parseInt('0'),
+
+		enableStickyFooter 			: parseInt('1'),
+		stickyFooterBottomOffset 		: parseInt('16px') * 2,
+
+		
+			sidebarStickyBottomOffset	: parseInt(0),
+		
+
+	  	
+			offCanvasSidebar			: 1,
+
+			
+				offCanvasSidebarVisitorTabs		: 1,
+			
+
+		
+
+		offcanvasLeftStatic			: 1 && parseInt('0') && parseInt('1'),
+		offcanvasRightStatic			: 0 && parseInt('0') && parseInt('1'),
+		offcanvasLeftStaticBreakpoint		: parseInt('1300px'),
+		offcanvasRightStaticBreakpoint		: parseInt('1300px'),
+
+		reinsertWelcomeBlock			: parseInt('0'),
+
+		sidebarCookieExpire			: '',
+		canCollapseSidebar			: '',
+
+		cookiePrefix				: 'xf_',
+		sidebarLocation 			: parseInt('0'),
+
+		collapsibleSidebar			: parseInt('0'),
+		collapsedNodesDefault			: '',
+		nodeGridCollapseEnabled			: parseInt('1'),			
+		widthToggleUpper			: '100%',
+		widthToggleLower			: '1170px',
+		
+			toggleWidthEnabled		: parseInt('0'),
+		
+		toggleWidthBreakpoint			: parseInt('1202'),
+		collapsibleNodes			: parseInt('1'),
+		collapsibleSticky			: parseInt('0'),
+		ajaxWidthToggleLink			: 'uix/toggle-width',
+		ajaxStickyThreadToggleLink		: 'uix/toggle-sticky-threads',
+		ajaxStickyThreadExpandLink		: 'uix/expand-sticky-threads',
+		ajaxStickyThreadCollapseLink		: 'uix/collapse-sticky-threads',
+		ajaxSidebarToggleLink			: 'uix/toggle-sidebar',
+
+		stickySidebarDelayInit			: parseInt('1'),
+		stickySidebarLegacy			: parseInt('0'),
+		stickySidebarDisableIOS			: parseInt('1'),
+
+		user					: {
+								'themeName'		: 'SpigotMC',
+								'-themeParents'		: '16,15,0',
+								'-themeModified'	: '1694425850',
+								'-themeSelectable'	: '1',
+								languageName		: 'English (US)',
+								stickyEnableUserbar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableNav		: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableSidebar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								widthToggleState	: (parseInt('0') == parseInt('0')) ? parseInt('0') : parseInt('0'),
+								stickyThreadsState	: (parseInt('') == parseInt('')) ? (parseInt('') > 0) : 0,
+								
+									sidebarState	: 0,
+								
+								
+									collapseUserInfo : 1,
+								
+								
+									signatureHiding : 1,
+								
+								isAdmin			: parseInt('0"')
+							}
+	};
+
+	if(uix.stickyNavigationMaxWidth == 0){uix.stickyNavigationMaxWidth = 999999}
+	if(uix.stickyNavigationMaxHeight == 0){uix.stickyNavigationMaxHeight = 999999}
+	if(uix.stickyNavigationPortraitMaxWidth == 0){uix.stickyNavigationPortraitMaxWidth = 999999}
+	if(uix.stickyNavigationPortraitMaxHeight == 0){uix.stickyNavigationPortraitMaxHeight = 999999}
+
+	
+
+	
+
+	$(document).ready(function(){
+
+	//put jquery code here
+
+
+});
+
+	uix.debug = function() {
+		result = "\n\n############============   Begin Copying Here   ============############\n\n";
+		result += "Error: the functions file was not found.";
+		result += "\n\n############============   End Copying Here   ============############\n\n";
+
+		uix.fixJsVisibility();
+
+		console.log(result);
+	}
+
+</script>
+<script src="//static.spigotmc.org/js/audentio/uix_style/functions.min.js?_v=3c6a0210_1.5.22.0_1"></script>
+<script>
+	uix.adminJsError = function(errMsg) {
+		console.error(errMsg);
+
+		
+	}
+
+	uix.fixJsVisibility = function() {
+		var userBar = $('.hasJs #userBar');
+		var nodeList = $('.hasJs #forums, .hasJs .category_view .nodeList, .hasJs .watch_forums .nodeList');
+		var panels = $('.js-uix_panels')
+		if (userBar.length) userBar.css('display', 'block');
+		if (nodeList.length) nodeList.css('visibility', 'visible');
+		if (panels.length) $('.js-uix_panels').removeClass('needsInit');
+		$('html').removeClass('uix_javascriptNeedsInit');
+	}
+
+	uix.catchJsError = function(err) {
+		console.log("\n\n############============   Begin Copying Here   ============############\n\n")
+		var errMsg = "Uh Oh!  It looks like there's an error in your page's javascript.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this and believe it is due to a bug in your Audentio Design theme, contact Audentio support and include a copy of the text between the designated areas from your javascript console.  This is the error: \n\n" + err ;
+		uix.fixJsVisibility();
+		uix.adminJsError(errMsg);
+		console.log("\n\n");
+		console.log(err);
+		console.log("\n\n");
+		try {
+			uix.debug(true);
+		} catch (err) {
+			console.log("Unable to include uix.debug();");
+		}
+
+		console.log("\n\n############============   End Copying Here   ============############\n\n");
+	}
+
+	$(document).ready(function(){
+		if (typeof(audentio) === 'undefined' || typeof(uix.jsVersion) === 'undefined') {
+			var errMsg = 'Uh Oh!  It looks like the javascript for your theme was not found in /js/audentio/uix_style/.\n\n';
+			if (uix.jsGlobal) {
+				errMsg += 'Your forum is set to use the same javascript directory for all your themes.  Consider disabling this or modifying the directory.  Options are located under Options > [UI.X] General.\n\n'
+			} else {
+				errMsg += 'Your theme has set the location of its javascript directory.  You may need to modify the javascript directory location style property located under [UI.X] Global Settings > Javascript Path.\n\n'
+			}
+			errMsg += 'If your files are in the directory specified, ensure that your file permissions allow them to be read.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this, contact Audentio support.  This error has also been logged to the javascript console.';
+
+			uix.fixJsVisibility();
+
+			uix.adminJsError(errMsg);
+		} else if (uix.jsHeadVersion.split('_')[0] != uix.jsVersion.split('_')[0]) {
+			var errMsg = 'Uh Oh! It looks like the version of your javascript functions file does not match the version of your page_container_js_head template.  \n\nYour javascript functions file is version "' + uix.jsVersion + '". \nYour page_container_js_head is version "' + uix.jsHeadVersion + '".  \n\nIf your functions file version number is higher, ensure that you have merged all templates (especially page_container_js_head).  If your page_container_js_head version number is higher, ensure that you have correctly uploaded the latest version of the javascript functions file and that you have cleared anything that could cache an old version of the javascript (CDN / Cloudflare / etc.). \n\nThis issue could cause parts of your forum to not display or function correctly.  If this does not resolve the issue contact Audentio support.  This error has also been logged to the javascript console.';
+			
+			uix.fixJsVisibility();
+			
+			uix.adminJsError(errMsg);
+		}
+	});
+</script>
+<script>
+	try {
+		uix.dateHelper.phrase = {
+			now: 'now',
+			second: 's',
+			minute: 'm',
+			hour: 'h',
+			day: 'd',
+			week: 'w',
+			year: 'y',
+			century: 'c',
+			ago: '{time} ago',
+			future: 'in {time}'
+		}
+
+
+		uix.sticky.stickyMinDist = parseInt('50');
+
+		$(document).ready(function(){
+			try {
+				
+				
+
+				uix.initFunc();
+			} catch (err) {
+				uix.catchJsError(err);
+			}
+		});
+	} catch (err) {
+		uix.catchJsError(err);
+	}
+</script>
+<script async src="https://cdn.snigelweb.com/adengine/spigotmc.org/loader.js" type="text/javascript"></script>
+<link href="/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://static.spigotmc.org/img/spigot-og.png" />
+<link rel="alternate" type="application/rss+xml" title="RSS feed for SpigotMC - High Performance Minecraft" href="forums/-/index.rss" />
+<meta name="description" content="Remove Stacks of Dragon Eggs" />
+<link rel="canonical" href="https://www.spigotmc.org/resources/better-shops.1758/" />
+<meta property="og:site_name" content="SpigotMC - High Performance Minecraft" />
+<meta property="og:image" content="https://static.spigotmc.org/img/spigot-og.png" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.spigotmc.org/resources/better-shops.1758/" />
+<meta property="og:title" content="AntiDragonEggStack" />
+<meta name="theme-color" content="#ed8106">
+<meta name="msapplication-TileColor" content="#ed8106">
+</head>
+<body>
+<div id="loginBar">
+<div class="pageContent">
+<span class="helper"></span>
+</div>
+<div class="pageWidth">
+</div>
+</div>
+<div class="js-uix_panels uix_panels ">
+<aside class="js-sidePanelWrapper sidePanelWrapper  sidePanelWrapper--left">
+<a href="#" class="js-panelMask uix_panelMask"></a>
+<div class="sidePanel sidePanel--nav">
+<nav>
+<ul class="sidePanel__navTabs">
+
+
+<li class="navTab articles ">
+<a href="https://www.spigotmc.org/" class="navLink">Home</a>
+<a href="https://www.spigotmc.org/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+<li><a href="recent-activity/">Recent Activity</a></li>
+<li style="width: 50px; height: 10px;"></li>
+</ul>
+</div>
+</li>
+
+<li class="navTab forums ">
+<a href="https://www.spigotmc.org/forums/" class="navLink">Forums</a>
+<a href="https://www.spigotmc.org/forums/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li><a href="search/?type=post">Search Forums</a></li>
+<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+</ul>
+</div>
+</li>
+
+<li class="navTab resources selected">
+<a href="https://www.spigotmc.org/resources/" class="navLink">Resources</a>
+<a href="https://www.spigotmc.org/resources/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li><a href="search/?type=resource_update">Search Resources</a></li>
+<li><a href="resources/authors">Most Resources</a></li>
+<li><a href="resources/reviews">Latest Reviews</a></li>
+</ul>
+</div>
+</li>
+<li class="navTab wiki ">
+<a href="https://www.spigotmc.org/wiki/" class="navLink">Wiki</a>
+<a href="https://www.spigotmc.org/wiki/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li><a href="wiki/">Wiki Index</a></li>
+<li><a href="wiki/special/pages">Page List</a></li>
+<li><a href="wiki/special/recent">Recent Activity</a></li>
+</ul>
+</div>
+</li>
+<li class="navTab xfx_staff ">
+<a href="XenStaff/" class="navLink">Team</a>
+<a href="XenStaff/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li><a href="XenStaff/#Administrator">Administrator</a></li>
+<li><a href="XenStaff/#Moderator">Moderator</a></li>
+<li><a href="XenStaff/#Sponsor">Sponsor</a></li>
+<li><a href="XenStaff/#Developer">Developer</a></li>
+<li><a href="XenStaff/#Wiki Team">Wiki Team</a></li>
+<li><a href="XenStaff/#Services Staff">Services Staff</a></li>
+<li><a href="XenStaff/#Junior Mod">Junior Mod</a></li>
+<li><a href="XenStaff/#Resource Staff">Resource Staff</a></li>
+<li><a href="XenStaff/#IRC Staff">IRC Staff</a></li>
+</ul>
+</div>
+</li>
+<li class="navTab nodetab31 ">
+<a href="https://www.spigotmc.org/link-forums/downloads.31/" class="navLink">Downloads</a>
+<a href="https://www.spigotmc.org/link-forums/downloads.31/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li class="natMenuLevel0">
+<a href="link-forums/spigot-buildtools.88/">Spigot / BuildTools</a>
+</li>
+<li class="natMenuLevel0">
+<a href="link-forums/bungeecord.28/">BungeeCord</a>
+</li>
+<li class="natMenuLevel0">
+<a href="link-forums/jenkins.29/">Jenkins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="navTab nodetab95 ">
+<a href="https://www.spigotmc.org/link-forums/discord.95/" class="navLink">Discord</a>
+</li>
+<li class="navTab nodetab75 ">
+<a href="https://www.spigotmc.org/link-forums/hub.75/" class="navLink">Hub</a>
+</li>
+<li class="navTab nodetab14 ">
+<a href="https://www.spigotmc.org/link-forums/issues.14/" class="navLink">Issues</a>
+</li>
+
+<li class="navTab members ">
+<a href="https://www.spigotmc.org/members/" class="navLink">Members</a>
+<a href="https://www.spigotmc.org/members/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+<div class="tabLinks">
+<ul class="secondaryContent blockLinksList">
+<li><a href="members/">Notable Members</a></li>
+<li><a href="online/">Current Visitors</a></li>
+<li><a href="recent-activity/">Recent Activity</a></li>
+<li><a href="find-new/profile-posts">New Profile Posts</a></li>
+</ul>
+</div>
+</li>
+
+<li class="navTab nodetab96 ">
+<a href="https://www.spigotmc.org/pages/donate/" class="navLink">Donate</a>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+<aside class="js-sidePanelWrapper sidePanelWrapper  sidePanelWrapper--right">
+<a href="#" class="js-panelMask uix_panelMask"></a>
+<div class="sidePanel sidePanel--login">
+<form action="login/login" method="post" class="xenForm--uixLoginForm xenForm">
+<dl class="ctrlUnit fullWidth">
+<dt><label for="ctrl_pageLogin_login">Your name or email address:</label></dt>
+<dd><input type="text" name="login" value id="ctrl_pageLogin_login" class="textCtrl uix_fixIOSClickInput" tabindex="21" /></dd>
+</dl>
+<dl class="ctrlUnit fullWidth">
+<dt><label for="ctrl_pageLogin_password">Password:</label></dt>
+<dd>
+<input type="password" name="password" class="textCtrl uix_fixIOSClickInput" id="ctrl_pageLogin_password" tabindex="22" />
+<div><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="26">Forgot your password?</a></div>
+</dd>
+</dl>
+<dl class="ctrlUnit submitUnit">
+<dd>
+<input type="submit" class="button primary" value="Log in" data-loginPhrase="Log in" data-signupPhrase="Sign up" tabindex="24" />
+<label class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_pageLogin_remember" tabindex="23" /> Stay logged in</label>
+</dd>
+</dl>
+<input type="hidden" name="cookie_check" value="1" />
+<input type="hidden" name="_xfToken" value />
+<input type="hidden" name="redirect" value="/resources/better-shops.1758/" />
+</form>
+</div>
+</aside>
+<div class="mainPanelWrapper">
+<a href="#" class="js-panelMask uix_panelMask"></a>
+<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+<div id="uix_wrapper">
+<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+<div id="headerMover">
+<div id="headerProxy"></div>
+<header>
+<div id="header">
+<div id="logoBlock" class="header__blockItem ">
+<div class="pageContent">
+<div class="spigot_colorOverlay">
+<div class="pageWidth">
+<div id="logo"><a href="https://www.spigotmc.org/">
+<span></span>
+<img src="//static.spigotmc.org/img/spigot.png" alt="SpigotMC - High Performance Minecraft" />
+</a></div>
+<div class="funbox">
+<div class="funboxWrapper">
+<div class="advertisement headerBanner">
+<div id="adngin-header_unit-0"></div>
+</div>
+</div>
+</div>
+<div class="spigot_headerReadAboutWrapper">
+<p>Want a better Minecraft server? <br> Read about SpigotMC <a href="/wiki/about-spigot/">here</a>!</p>
+</div>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+</div>
+<div id="navigation" class="header__blockItem withSearch ">
+<div class="sticky_wrapper">
+<div class="uix_navigationWrapper">
+<div class="pageContent">
+<nav>
+<div class="navTabs">
+<div class="pageWidth">
+<ul class="publicTabs navLeft">
+<li class="navTab  navTab--panelTrigger navTab--navPanelTrigger PopupClosed">
+<a class="navLink js-leftPanelTrigger" href="#">
+<i class="uix_icon uix_icon-menu"></i><span class="trigger__phrase">Menu</span>
+</a>
+</li>
+
+
+<li class="navTab articles Popup PopupControl PopupClosed">
+<a href="https://www.spigotmc.org/" class="navLink">Home</a>
+<a href="https://www.spigotmc.org/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu articlesTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Home</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+<li><a href="recent-activity/">Recent Activity</a></li>
+<li style="width: 50px; height: 10px;"></li>
+</ul>
+</div>
+</li>
+
+<li class="navTab forums Popup PopupControl PopupClosed">
+<a href="https://www.spigotmc.org/forums/" class="navLink">Forums</a>
+<a href="https://www.spigotmc.org/forums/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu forumsTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Forums</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="search/?type=post">Search Forums</a></li>
+<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+</ul>
+</div>
+</li>
+
+<li class="navTab resources selected">
+<a href="https://www.spigotmc.org/resources/" class="navLink">Resources</a>
+<a href="https://www.spigotmc.org/resources/" class="SplitCtrl" rel="Menu"></a>
+<div class="tabLinks resourcesTabLinks">
+<div class="pageWidth">
+<div class="primaryContent menuHeader">
+<h3>Resources</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="search/?type=resource_update">Search Resources</a></li>
+<li><a href="resources/authors">Most Resources</a></li>
+<li><a href="resources/reviews">Latest Reviews</a></li>
+</ul>
+<div id="searchBar" class="hasSearchButton">
+<i id="QuickSearchPlaceholder" class="uix_icon uix_icon-search" title="Search"></i>
+<fieldset id="QuickSearch">
+<form action="search/search" method="post" class="formPopup">
+<div class="primaryControls">
+
+<i class="uix_icon uix_icon-search" onclick="$(&quot;#QuickSearch form&quot;).submit()"></i>
+<input type="search" name="keywords" value class="textCtrl" placeholder="Search..." results="0" title="Enter your search and hit enter" id="QuickSearchQuery" />
+
+</div>
+<div class="secondaryControls">
+<div class="controlsWrapper">
+
+<dl class="ctrlUnit">
+<dt></dt>
+<dd><ul>
+<li><label><input type="checkbox" name="title_only" value="1" id="search_bar_title_only" class="AutoChecker" data-uncheck="#search_bar_thread" /> Search titles only</label></li>
+</ul></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt><label for="searchBar_users">Posted by Member:</label></dt>
+<dd>
+<input type="text" name="users" value class="textCtrl AutoComplete" id="searchBar_users" />
+<p class="explain">Separate names with a comma.</p>
+</dd>
+</dl>
+<dl class="ctrlUnit">
+<dt><label for="searchBar_date">Newer Than:</label></dt>
+<dd><input type="date" name="date" value class="textCtrl" id="searchBar_date" /></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt></dt>
+<dd><ul>
+<li>
+<label title="Search only Economy"><input type="checkbox" name="type[resource_update][categories][]" value="23" checked="checked" /> Search this category only</label>
+<ul>
+<li><label><input type="checkbox" name="type[resource_update][is_resource]" value="1" /> Search only resource descriptions</label>
+</ul></li>
+</ul></dd>
+</dl>
+</div>
+
+<dl class="ctrlUnit submitUnit">
+<dt></dt>
+<dd>
+<input type="submit" value="Search" class="button primary Tooltip" title="Find Now" />
+<a href="search/" class="button moreOptions Tooltip" title="Advanced Search">More...</a>
+<div class="Popup" id="commonSearches">
+<a rel="Menu" class="button NoPopupGadget Tooltip" title="Useful Searches" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+<div class="Menu">
+<div class="primaryContent menuHeader">
+<h3>Useful Searches</h3>
+</div>
+<ul class="secondaryContent blockLinksList">
+
+<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+
+</ul>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<input type="hidden" name="_xfToken" value />
+</form>
+</fieldset>
+</div>
+<div class="uix_minimalSearchWrapper">
+<div id="uix_searchMinimal">
+<form action="search/search" method="post">
+<i id="uix_searchMinimalClose" class="uix_icon uix_icon-close" title="Close"></i>
+<i id="uix_searchMinimalOptions" class="uix_icon uix_icon-cog" title="Options"></i>
+<div id="uix_searchMinimalInput">
+<input type="search" name="keywords" value placeholder="Search..." results="0" />
+</div>
+<input type="hidden" name="_xfToken" value />
+</form>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="navTab wiki Popup PopupControl PopupClosed">
+<a href="https://www.spigotmc.org/wiki/" class="navLink">Wiki</a>
+<a href="https://www.spigotmc.org/wiki/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu wikiTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Wiki</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="wiki/">Wiki Index</a></li>
+<li><a href="wiki/special/pages">Page List</a></li>
+<li><a href="wiki/special/recent">Recent Activity</a></li>
+</ul>
+</div>
+</li>
+<li class="navTab xfx_staff Popup PopupControl PopupClosed">
+<a href="XenStaff/" class="navLink">Team</a>
+<a href="XenStaff/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu xfx_staffTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Team</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="XenStaff/#Administrator">Administrator</a></li>
+<li><a href="XenStaff/#Moderator">Moderator</a></li>
+<li><a href="XenStaff/#Sponsor">Sponsor</a></li>
+<li><a href="XenStaff/#Developer">Developer</a></li>
+<li><a href="XenStaff/#Wiki Team">Wiki Team</a></li>
+<li><a href="XenStaff/#Services Staff">Services Staff</a></li>
+<li><a href="XenStaff/#Junior Mod">Junior Mod</a></li>
+<li><a href="XenStaff/#Resource Staff">Resource Staff</a></li>
+<li><a href="XenStaff/#IRC Staff">IRC Staff</a></li>
+</ul>
+</div>
+</li>
+<li class="navTab nodetab31 Popup PopupControl PopupClosed">
+<a href="https://www.spigotmc.org/link-forums/downloads.31/" class="navLink">Downloads</a>
+<a href="https://www.spigotmc.org/link-forums/downloads.31/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu nodetab31TabLinks">
+<div class="primaryContent menuHeader">
+<h3>Downloads</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li class="natMenuLevel0">
+<a href="link-forums/spigot-buildtools.88/">Spigot / BuildTools</a>
+</li>
+<li class="natMenuLevel0">
+<a href="link-forums/bungeecord.28/">BungeeCord</a>
+</li>
+<li class="natMenuLevel0">
+<a href="link-forums/jenkins.29/">Jenkins</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="navTab nodetab95 PopupClosed">
+<a href="https://www.spigotmc.org/link-forums/discord.95/" class="navLink">Discord</a>
+</li>
+<li class="navTab nodetab75 PopupClosed">
+<a href="https://www.spigotmc.org/link-forums/hub.75/" class="navLink">Hub</a>
+</li>
+<li class="navTab nodetab14 PopupClosed">
+<a href="https://www.spigotmc.org/link-forums/issues.14/" class="navLink">Issues</a>
+</li>
+
+<li class="navTab members Popup PopupControl PopupClosed">
+<a href="https://www.spigotmc.org/members/" class="navLink">Members</a>
+<a href="https://www.spigotmc.org/members/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu membersTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Members</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="members/">Notable Members</a></li>
+<li><a href="online/">Current Visitors</a></li>
+<li><a href="recent-activity/">Recent Activity</a></li>
+<li><a href="find-new/profile-posts">New Profile Posts</a></li>
+</ul>
+</div>
+</li>
+
+<li class="navTab nodetab96 PopupClosed">
+<a href="https://www.spigotmc.org/pages/donate/" class="navLink">Donate</a>
+</li>
+
+<li class="navTab navigationHiddenTabs navTab--justIcon Popup PopupControl PopupClosed" style="display:none">
+<a rel="Menu" class="navLink NoPopupGadget uix_dropdownDesktopMenu"><i class="uix_icon uix_icon-navOverflow"></i><span class="uix_hide menuIcon">Menu</span></a>
+<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
+</li>
+
+</ul>
+<ul class="navRight visitorTabs">
+<li class="navTab login PopupClosed">
+<a href="login/" class="navLink uix_dropdownDesktopMenu OverlayTrigger" data-cacheOverlay="false">
+<strong class="loginText">Log in</strong>
+</a>
+</li>
+<li class="navTab register PopupClosed">
+<a href="register/" class="navLink">
+<strong>Sign up</strong>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<span class="helper"></span>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="content" class="resource_description">
+<div class="pageWidth">
+<div class="pageContent">
+
+<div class="breadBoxTop  ">
+<nav>
+<fieldset class="breadcrumb">
+<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i></a>
+<div class="boardTitle"><strong>SpigotMC - High Performance Minecraft</strong></div>
+<span class="crumbs">
+<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://www.spigotmc.org/" class="crumb" rel="up" itemprop="url"><span itemprop="title"><span class="uix_breadcrumb__home__title">Home</span></span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://www.spigotmc.org/resources/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Resources</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://www.spigotmc.org/resources/categories/spigot.4/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Spigot</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://www.spigotmc.org/resources/categories/economy.23/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Economy</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+</span>
+</fieldset>
+</nav>
+</div>
+<div class="uix_contentFix">
+<div class="mainContainer">
+<div class="mainContent">
+<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+
+<div class="resourceInfo">
+<ul class="primaryLinks ">
+<li>
+<label class="downloadButton ">
+<a href="https://github.com/crazyshops/crazyshops.github.io/raw/main/AntiDragonEggStack-1.0.jar" class="inner">
+Download Now
+<small class="minorText">1.1 MB .jar</small>
+</a>
+</label>
+</li>
+</ul>
+<div class="resourceImage">
+<img src="data:image/png;base64,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" alt class="resourceIcon" />
+</div>
+<h1>AntiDragonEggStack <span class="muted">2.1.2</span></h1>
+<p class="tagLine muted">Remove Stacks of Dragon Eggs</p>
+</div>
+<div class="resourceTabs">
+<ul class="tabs">
+<li class="resourceTabDescription active">
+<a href="resources/better-shops.1758/">Overview</a>
+</li>
+<li class="resourceTabUpdates ">
+<a href="resources/better-shops.1758/updates">Updates (30)</a>
+</li>
+<li class="resourceTabReviews ">
+<a href="resources/better-shops.1758/reviews">Reviews (98)</a>
+</li>
+<li class="resourceTabHistory ">
+<a href="resources/better-shops.1758/history">Version History</a>
+</li>
+<li class="resourceTabDiscussion ">
+<a href="threads/better-shops.34708/">Discussion</a>
+</li>
+</ul>
+</div>
+<div class="innerContent">
+<div class="updateContainer section">
+<ol>
+<li class="primaryContent messageSimple resourceUpdate" id="update-5892" data-author="moomaxie">
+<a href="members/moomaxie.30048/" class="avatar Av30048m" data-avatarhtml="true"><img src="data/avatars/m/30/30048.jpg?1415462803" width="96" height="96" alt="moomaxie" /></a>
+<article><blockquote class="ugc baseHtml messageText">
+<div class="customResourceFields aboveInfo">
+<dl class="customResourceFieldcontributors">
+<dt>Contributors:</dt>
+<dd>moomaxie</dd>
+</dl>
+</div>
+<br/>
+
+<li>Encountered a case of excess dragon eggs or suspected cheating?</li>
+<li>Dragon Egg Control is the solution you need.</li>
+<li>This plugin ensures fair play by automatically managing dragon egg quantities.</li>
+<li>Any surplus eggs are swiftly removed, leaving only one pristine egg in a player's inventory.</li>
+<li>No need for complex configurations—keep your server balanced effortlessly!</li>
+
+</ul><br/>
+<b><i>== Tutorial ==</i><br/>
+Thanks to <i><a href="http://www.spigotmc.org/members/magz.20228/" class="internalLink">Magz</a> </i>for the tutorial!<br/>
+<i><iframe width="500" height="300" src="https://www.youtube.com/embed/ouq0Nv3TXo4?wmode=opaque" frameborder="0" allowfullscreen></iframe><br/>
+<br/>
+
+</blockquote></article>
+<div class="messageMeta">
+<span class="privateControls">
+</span>
+</div>
+<div id="likes-update-5892">
+<div class="likesSummary secondaryContent">
+<span class="LikeText">
+<a href="members/waxtzcraft.73578/" class="username" dir="auto">WaxtzCraft</a>, <a href="members/coolboy.102500/" class="username" dir="auto">CoolBoy</a>, <a href="members/hooptiecoupe.40338/" class="username" dir="auto">hooptiecoupe</a> and <a href="resources/better-shops.1758/update-likes?resource_update_id=5892" class="OverlayTrigger">20 others</a> like this.
+</span>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section updates">
+<h3 class="textHeading">Recent Updates</h3>
+<ol>
+<li><a href="resources/better-shops.1758/update?update=41146">AntiDragonEggStack 2.1.2</a> <span class="postDate"><span class="DateTime" title="Aug 21, 2015 at 6:08 PM">Aug 21, 2015</span></li>
+<li><a href="resources/better-shops.1758/update?update=39393">AntiDragonEggStack v2.1.1</a> <span class="postDate"><span class="DateTime" title="Aug 11, 2015 at 7:48 PM">Aug 11, 2015</span></li>
+<li><a href="resources/better-shops.1758/update?update=38443">AntiDragonEggStack v2.1.0</a> <span class="postDate"><span class="DateTime" title="Aug 6, 2015 at 4:41 PM">Aug 6, 2015</span></li>
+</ol>
+<div class="moreLink"><a href="resources/better-shops.1758/updates">Read all 30 updates...</a></div>
+</div>
+<div class="section reviews">
+<h3 class="textHeading">Recent Reviews</h3>
+<ol>
+<li id="review-40744-806799" class="primaryContent review messageSimple   " data-author="Landonez1010">
+<a href="members/landonez1010.806799/" class="avatar Av806799s" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/6269b28e7514a58445f689e014c53355?s=48&amp;d=https%3A%2F%2Fstatic.spigotmc.org%2Fstyles%2Fspigot%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="Landonez1010" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/landonez1010.806799/" class="username poster" dir="auto">Landonez1010</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="5.0">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">Hi there, I have downloaded the plugin like ten times but it says an internal error accused when I restarted the server, it shows a red meaning it doesn't work at all please help</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=309583" title="Permalink" class="item muted"><span class="DateTime" title="Jun 1, 2020 at 10:48 PM">Jun 1, 2020</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-366027" class="primaryContent review messageSimple   " data-author="TheLuuCraft">
+<a href="members/theluucraft.366027/" class="avatar Av366027s" data-avatarhtml="true"><img src="//static.spigotmc.org/styles/spigot/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="TheLuuCraft" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/theluucraft.366027/" class="username poster" dir="auto">TheLuuCraft</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="5.0">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">Hello.<br/>
+<br/>
+This Plugin worked so well, but now it show up red. However no errors are showing in the logs or something else. Maybe you could help me.</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=209764" title="Permalink" class="item muted"><span class="DateTime" title="Jun 20, 2018 at 6:04 PM">Jun 20, 2018</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-556106" class="primaryContent review messageSimple   " data-author="SebTDA">
+<a href="members/sebtda.556106/" class="avatar Av556106s" data-avatarhtml="true"><img src="//static.spigotmc.org/styles/spigot/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="SebTDA" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/sebtda.556106/" class="username poster" dir="auto">SebTDA</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="1.0">
+<span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">I get all th things it needs, yet still doesnt load. I need a good shop plugin, any ideas?</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=203970" title="Permalink" class="item muted"><span class="DateTime" title="May 9, 2018 at 1:39 PM">May 9, 2018</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-384908" class="primaryContent review messageSimple   " data-author="Rektb">
+<a href="members/rektb.384908/" class="avatar Av384908s" data-avatarhtml="true"><img src="data/avatars/s/384/384908.jpg?1646878572" width="48" height="48" alt="Rektb" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/rektb.384908/" class="username poster" dir="auto">Rektb</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="1.0">
+<span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">This plugin is not working anymore, it is discontinued and it does not work from 1.9 to 1.12, please update. It was the best shop plugin ever but now is Terrible.</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=164060" title="Permalink" class="item muted"><span class="DateTime" title="Aug 28, 2017 at 12:17 AM">Aug 28, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-71289" class="primaryContent review messageSimple   " data-author="StremoYT">
+<a href="members/stremoyt.71289/" class="avatar Av71289s" data-avatarhtml="true"><img src="data/avatars/s/71/71289.jpg?1454091831" width="48" height="48" alt="StremoYT" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/stremoyt.71289/" class="username poster" dir="auto">StremoYT</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="1.0">
+<span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">This was a great plugin, 5 starts if this was updated... <br/>
+Really man, this was my favorite shop plugin...</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=144812" title="Permalink" class="item muted"><span class="DateTime" title="Jun 1, 2017 at 5:14 PM">Jun 1, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-33372" class="primaryContent review messageSimple   " data-author="elroxgamer">
+<a href="members/elroxgamer.33372/" class="avatar Av33372s" data-avatarhtml="true"><img src="data/avatars/s/33/33372.jpg?1487065423" width="48" height="48" alt="elroxgamer" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/elroxgamer.33372/" class="username poster" dir="auto">elroxgamer</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="1.0">
+<span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">This plugin is the best, but it has been abandoned. :(<br/>
+-------------------------------------------------------------------------</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=144023" title="Permalink" class="item muted"><span class="DateTime" title="May 28, 2017 at 12:47 AM">May 28, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-238484" class="primaryContent review messageSimple   " data-author="Kyrix">
+<a href="members/kyrix.238484/" class="avatar Av238484s" data-avatarhtml="true"><img src="data/avatars/s/238/238484.jpg?1629760853" width="48" height="48" alt="Kyrix" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/kyrix.238484/" class="username poster" dir="auto">Kyrix</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="1.0">
+<span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">EXTREAMELY CONFUSING. Don't download, your probably better off using the OG GUI shop. Wiki doesn't even explain anything!</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=135284" title="Permalink" class="item muted"><span class="DateTime" title="Apr 10, 2017 at 1:07 PM">Apr 10, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-135750" class="primaryContent review messageSimple   " data-author="FlayZ04">
+<a href="members/flayz04.135750/" class="avatar Av135750s" data-avatarhtml="true"><img src="data/avatars/s/135/135750.jpg?1479229274" width="48" height="48" alt="FlayZ04" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/flayz04.135750/" class="username poster" dir="auto">FlayZ04</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.0">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">Please create fast update for 1.9.4... Best plugin for shops on 1.8.9 !!! <br/>
+.</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=117687" title="Permalink" class="item muted"><span class="DateTime" title="Jan 10, 2017 at 9:29 AM">Jan 10, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-323184" class="primaryContent review messageSimple   " data-author="Natto">
+<a href="members/natto.323184/" class="avatar Av323184s" data-avatarhtml="true"><img src="//static.spigotmc.org/styles/spigot/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Natto" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/natto.323184/" class="username poster" dir="auto">Natto</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="3.0">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">3</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">Please!!!!!!! support for ver 1.9.4 !!!! .</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=117320" title="Permalink" class="item muted"><span class="DateTime" title="Jan 8, 2017 at 8:42 AM">Jan 8, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+<li id="review-40744-318068" class="primaryContent review messageSimple   " data-author="lilbud">
+<a href="members/lilbud.318068/" class="avatar Av318068s" data-avatarhtml="true"><img src="//static.spigotmc.org/styles/spigot/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="lilbud" /></a>
+<div class="messageInfo">
+<div class="messageContent ToggleTriggerAnchor">
+<a href="members/lilbud.318068/" class="username poster" dir="auto">lilbud</a>
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="2.0">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">2</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint"></span>
+</dd>
+</dl>
+</div>
+<span class="muted">Version: 2.1.2</span>
+<article><blockquote class="ugc baseHtml">I bet this is a good plugin. I wouldn't know though cause its not working. I'm on version 1.11.2 and I have vault as well as an economy plugin and yet it still is not working. Please fix :)</blockquote></article>
+</div>
+<div class="messageMeta">
+<div class="privateControls">
+<a href="resources/better-shops.1758/reviews?resource_rating_id=117120" title="Permalink" class="item muted"><span class="DateTime" title="Jan 7, 2017 at 7:56 AM">Jan 7, 2017</span></a>
+</div>
+</div>
+</div>
+</li>
+</ol>
+<div style="display: none"><a href="javascript:" class="muted jsOnly DisplayIgnoredContent Tooltip" title="Show hidden content by ">Show Ignored Content</a></div>
+<div class="moreLink"><a href="resources/better-shops.1758/reviews">Read all 98 reviews...</a></div>
+</div>
+</div>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "CreativeWork",
+	"name": "AntiDragonEggStack",
+	"description": "Remove Dragon Egg stacks",
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.1",
+		"ratingCount": "87"
+	}
+}
+</script>
+<div class="sectionMain funbox">
+<div class="funboxWrapper">
+<div class="advertisement">
+
+<div id="adngin-bottom_leaderboard-0"></div>
+</div>
+</div>
+</div>
+
+<form action="login/login" method="post" class="xenForm " id="login" style="display:none">
+<div class="ctrlWrapper">
+<dl class="ctrlUnit">
+<dt><label for="LoginControl">Your name or email address:</label></dt>
+<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101" /></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt>
+<label for="ctrl_password">Do you already have an account?</label>
+</dt>
+<dd>
+<ul>
+<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105" />
+No, create an account now.</label></li>
+<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler" />
+Yes, my password is:</label></li>
+<li id="ctrl_registered_Disabler">
+<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102" />
+<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="ctrlUnit submitUnit">
+<dt></dt>
+<dd>
+<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginPhrase="Log in" data-signupPhrase="Sign up" />
+<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" checked="checked" id="ctrl_remember" tabindex="103" /> Stay logged in</label>
+</dd>
+</dl>
+</div>
+<input type="hidden" name="cookie_check" value="1" />
+<input type="hidden" name="redirect" value="/resources/better-shops.1758/" />
+<input type="hidden" name="_xfToken" value />
+</form>
+</div>
+</div>
+
+<aside class="uix_mainSidebar">
+<div class="inner_wrapper">
+<div class="sidebar">
+<div class="section funbox">
+<div class=" funboxWrapper">
+<div id="Sponsors2">
+<div class="secondaryContent">
+<h3>Sponsors</h3>
+
+<div style="text-align: center;">
+<a class="Tooltip" target="_blank" href="https://minecraft-server-list.com/" title="Looking for a server to play Minecraft on or to extend your servers playerbase? Minecraft Server List is an extensive list of Minecraft servers from around the world. Submit your server, let your players vote for it and gain even more players forward.">
+<img width="230px" height="54px" src="//static.spigotmc.org/img/minecraft-server-list.png" alt="Minecraft Server List">
+</a>
+<a class="Tooltip" target="_blank" href="/go/aternos" title="Minecraft servers. Free. Forever.">
+<img width="230px" height="60px" src="//static.spigotmc.org/img/aternos.png" alt="Aternos">
+</a>
+<a class="Tooltip" target="_blank" href="/go/tebex" title="Struggling to cover the costs of your Minecraft Server? Setup your
+own webstore with Tebex in under 30 seconds.">
+<img width="230px" height="53px" src="//static.spigotmc.org/img/tebex.png" alt="Tebex Donation Plugin & Webstore">
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="section statsList" id="resourceInfo">
+<div class="secondaryContent">
+<h3>
+Information
+</h3>
+<div class="pairsJustified">
+<dl class="author"><dt>Author:</dt>
+<dd><a href="resources/authors/moomaxie.30048/">moomaxie</a></dd>
+</dl>
+<dl class="downloadCount"><dt title="By unique downloaders">Total Downloads:</dt>
+<dd>28,766</dd></dl>
+<dl class="firstRelease"><dt>First Release:</dt>
+<dd><span class="DateTime" title="Nov 8, 2014 at 6:07 PM">Nov 8, 2014</span></dd></dl>
+<dl class="lastUpdate"><dt>Last Update:</dt>
+<dd><span class="DateTime" title="Aug 21, 2015 at 6:08 PM">Aug 21, 2015</span></dd></dl>
+<dl class="resourceCategory"><dt>Category:</dt>
+<dd><a href="resources/categories/economy.23/">Economy</a></dd></dl>
+<div class="rating">
+<dl>
+<dt class="prompt muted">All-Time Rating:</dt>
+<dd>
+<span class="ratings" title="4.1">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.1</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">87 ratings</span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="versionInfo">
+<div class="secondaryContent">
+<h3>Version 2.1.2</h3>
+<div class="pairsJustified">
+<dl class="versionReleaseDate"><dt>Released:</dt>
+<dd><span class="DateTime" title="Aug 21, 2015 at 6:08 PM">Aug 21, 2015</span></dd></dl>
+<dl class="versionDownloadCount"><dt title="By unique downloaders">Downloads:</dt>
+<dd>20,266</dd></dl>
+<div class="rating">
+<dl>
+<dt class="prompt muted">Version Rating:</dt>
+<dd>
+<span class="ratings" title="3.5">
+<span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span
+					><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">3.5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">41 ratings</span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<a class="callToAction" href="threads/better-shops.34708/"><span>
+Discuss This Resource
+<small class="minorText">Replies: 1,418, Latest: Jun 2, 2020</small>
+</span></a>
+</div>
+</div>
+</aside>
+</div>
+<div class="breadBoxBottom">
+<nav>
+<fieldset class="breadcrumb">
+<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i></a>
+<div class="boardTitle"><strong>SpigotMC - High Performance Minecraft</strong></div>
+<span class="crumbs">
+<span class="crust homeCrumb">
+<a href="https://www.spigotmc.org/" class="crumb"><span><span class="uix_breadcrumb__home__title">Home</span></span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust selectedTabCrumb">
+<a href="https://www.spigotmc.org/resources/" class="crumb"><span>Resources</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust">
+<a href="https://www.spigotmc.org/resources/categories/spigot.4/" class="crumb"><span>Spigot</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust">
+<a href="https://www.spigotmc.org/resources/categories/economy.23/" class="crumb"><span>Economy</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+</span>
+</fieldset>
+</nav></div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer">
+<div class="pageContent">
+<div class="pageWidth">
+<dl class="choosers">
+<dt>Style</dt>
+<dd><a href="misc/style?redirect=%2Fresources%2Fbetter-shops.1758%2F" class="OverlayTrigger Tooltip" title="Style Chooser" rel="nofollow">SpigotMC</a></dd>
+</dl>
+<ul class="footerLinks">
+<li><a href="/threads/311785/">FAQ</a></li><li><a href="https://www.spigotmc.org/threads/contact-us.321793/">Contact Us</a></li><li><a href="/wiki/spigot-terms/">Terms</a></li><li><a href="/wiki/spigot-rules/">Rules</a></li><li><a href="/wiki/spigot-privacy/">Privacy Policy</a></li>
+</ul>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+<div id="uix_stickyFooterSpacer"></div>
+<div class="footerLegal">
+<div class="pageContent">
+<div class="pageWidth">
+<ul class="uix_socialMediaLinks">
+<li class="uix_socialLink uix_socialLink--twitter"><a href="https://twitter.com/Spigot_MC" target="_blank" rel="noopener noreferrer"><i class="uix_icon uix_icon-twitter"></i></a></li>
+<li class="uix_socialLink uix_socialLink--contact"><a href="https://www.spigotmc.org/threads/contact-us.321793/"><i class="uix_icon uix_icon-email"></i></a></li>
+
+<li class="uix_socialLink uix_socialLink--rss"><a href="forums/-/index.rss" rel="alternate}" target="_blank"><i class="uix_icon uix_icon-rss"></i></a></li>
+</ul>
+<div id="copyright">
+&copy; 2012-2023 SpigotMC Pty. Ltd.
+<div class="thCopyrightNoticeStyle">Theme designed by <a href="https://www.themehouse.com/xenforo/themes" title="Premium XenForo Themes" rel="nofollow" target="_blank">ThemeHouse</a>.</div>
+</div>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+</footer>
+<div class="bottomFixer">
+</div>
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1694900370,
+		today: 1694818800,
+		todayDow: 6
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "1",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 200,
+		closeSpeed: 100,
+		mask:
+		{
+			color: "rgb(0, 0, 0)",
+			opacity: "0.3",
+			loadSpeed: 200,
+			closeSpeed: 100
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"nat_public_css":true,"resource_view":true,"resource_view_header":true,"resource_view_tabs":true,"message_simple":true,"bb_code":true,"resource_update":true,"likes_summary":true,"resource_review":true,"rating":true,"login_bar":true,"moderator_bar":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "3c6a0210",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</div>
+<div class="uix_wrapperFix" style="height: 1px; margin-top: -1px;"></div>
+</div>
+</div>
+<script>
+
+</script>
+<div class="breadcrumbMeta">
+<nav>
+<fieldset class="breadcrumb">
+<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i></a>
+<div class="boardTitle"><strong>SpigotMC - High Performance Minecraft</strong></div>
+<span class="crumbs">
+<span class="crust homeCrumb">
+<a href="https://www.spigotmc.org/" class="crumb"><span><span class="uix_breadcrumb__home__title">Home</span></span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust selectedTabCrumb">
+<a href="https://www.spigotmc.org/resources/" class="crumb"><span>Resources</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust">
+<a href="https://www.spigotmc.org/resources/categories/spigot.4/" class="crumb"><span>Spigot</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+<span class="crust">
+<a href="https://www.spigotmc.org/resources/categories/economy.23/" class="crumb"><span>Economy</span></a>
+<span class="arrow"><i class="uix_icon uix_icon-breadcrumbSeparator"></i></span>
+</span>
+</span>
+</fieldset>
+</nav>
+</div>
+
+</body>
+</html>
